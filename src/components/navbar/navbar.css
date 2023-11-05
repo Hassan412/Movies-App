@@ -1,0 +1,51 @@
+.movies-navbar{
+    height: 4rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.movies-navbar .movies-navbar__logo h1{
+    color: red;
+    font-weight: 700;
+}
+
+.movies-navbar .movies-navbar__links ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.movies-navbar .movies-navbar__links ul li{
+    list-style: none;
+
+}
+
+.movies-navbar .movies-navbar__links ul li a{
+    text-decoration: none;
+    color: lightgray;
+    font-family: var(--font-poppins);
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+.movies-navbar .movies-navbar__links ul li:first-child a{
+    color: red;
+}
+
+.movies-navbar .movies-navbar__links ul li a:hover{
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    .movies-navbar .movies-navbar__links{
+        display: none;
+    }
+}
